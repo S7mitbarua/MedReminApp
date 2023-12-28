@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MedReminapp</title>
+</head>
+<body>
+    <div class="background-image">
+    <div class="container">
+        <h1>Medication Reminder App</h1>
+        <form id="medForm">
+            <label for="medName">Medication Name:</label>
+            <input type="text" id="medName" required>
+
+            <label for="medTime">Reminder Time:</label>
+            <input type="time" id="medTime" required>
+
+            <label for="medSpecialty">Medical Specialty:</label>
+            <select id="medSpecialty" required>
+                <option value="choose your medical specialities"><Choose the following></option>
+                <option value="cardiology">Cardiology</option>
+                <option value="psychiatry">Psychiatry</option>
+                <option value="endocrinology">Endocrinology</option>
+                <option value="gastenterology">Gastroenterology</option>  
+                <option value="pulmonology">Pulmonology</option>
+                <option value="nephrology">Nephrology</option>
+                <option value="neurology">Neurology</option>
+                <option value="dermatology">Dermatology</option>
+                <option value="anesthesiology">Anesthesiology</option>
+                <option value="hematology">Hematology</option>
+                <option value="oncology">Oncology</option>
+                <option value="infectious diseases">Infectious Diseases</option>
+                <option value="opthalmology">Opthalmology</option>
+                <option value="otolaryngology">Otolaryngology/ENT</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="ob/gyn">Obstetrics and Gynecology</option>
+                <option value="peds">Pediatrics</option>
+                <option value="er/em">Emergency Medicine</option>
+                <option value="im">Internal Medicine</option>
+                <!-- Add more specialties as needed -->
+            </select>
+
+            <label for="medType">Medication Type:</label>
+            <select id="medType" required>
+                <option value="types of medications"><Choose the following></option>
+                <option value="analgesic">Analgesic</option>
+                <option value="antihypertensive">Antihypertensive</option>
+                <option value="anticoagulant">Anticoagulant</option>
+                <option value="antibiotics">Antibiotics</option>
+                <option value="insulin">Insulin</option>
+                <option value="nsaids">Nonsteroidal anti-inflammatory drugs</option>
+                <option value="dmards">Disease-modifying antirheumatic drugs</option>
+                <option value="biologics">Biologics</option>
+                <option value="proton pump inhibitors">Proton Pump Inhibitors/PPI</option>
+                <option value="h2 blockers">H2 Blockers</option>
+                <option value="laxatives">Laxatives</option>
+                <option value="antispasmodics">Antispasmodics</option>
+                <option value="bronchodilators">Bronchodilators</option>
+                <option value="cortcosteroids">Corticosteroids</option>
+                <option value="antimicrobial agents">Antimicrobial Agents</option>
+                <option value="diuretics">Diuretics</option>
+                <option value="ace inhibitors">Angiotensin-converting enzyme (ACE) inhibitors</option>
+                <option value="angiotensin">Angiotensin II receptor blockers (ARBs)</option>
+                <option value="antiepileptic">Antiepileptic drugs</option>
+                <option value="antidepressants">Antidepressants</option>
+                <option value="antipsychotics">Antipsychotics</option>
+                <option value="antifungals">Antifungals</option>
+                <option value="retinoids">Retinoids</option>
+                <option value="antihistamines">Antihistamines</option>
+                <option value="decongestants">Decongestants</option>
+                <option value="chemotherapy">Chemotherapy drugs</option>
+                <option value="immunotherapy">Immunotherapy</option>
+                <option value="targeted therapy">Targeted therapy</option>
+                <option value="antiemetics">Antiemetics</option>
+                <option value="vasopressors">Vasopressors</option>
+                <option value="anxiolytics">Anxiolytics</option>
+                <option value="mood stabilizers">Mood stabilizers</option>
+                <option value="contraceptives">Contraceptives</option>
+                <option value="antidiabetic medications">Antidiabetic Medications</option>
+                <option value="hrt">Homone Replacement Therapy</option>
+                <option value="oxytocies">Oxytocies</option>
+                <option value="anesthetics">Anesthetics</option>
+                <option value="neuromuscular blockers">Neuromuscular Blockers</option>
+                <!-- Add more medication types as needed -->
+            </select>
+
+            <button type="button" onclick="addMedication()">Add Medication</button>
+            <button type="button" onclick="resetAllMedications()">Reset All Medications</button>
+        </form>
+
+        <ul id="medList"></ul>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
